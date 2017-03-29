@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-4">
+      <form class="form-signin" (submit)="loginSubmit()">
+          <h2 class="form-signin-heading">Login</h2>
+          <div class="form-group">
+            <label for="username"> </label>
+            <input type="text" name="name" [(ngModel)]="username" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label for="password" ></label>
+            <input type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="password">
+          </div>
+
+          <button class="btn btn-success" type="submit">Login</button>
+          
+        </form>
+        <a href="/auth/facebook" class="btn btn-success">LOGIN FB</a>
+        <a href="/auth/twitter" class="btn btn-success">Login with Twitter</a>
+        <img src="/assets/facebook-login.png" (click)="facebookLogin()">
+        <img src="/assets/google-login.png" (click)="googleLogin()">
+        <img src="/assets/twitter-login.png" (click)="twitterLogin()">
+    </div>
+  </div>
+</div>
+  
+  
